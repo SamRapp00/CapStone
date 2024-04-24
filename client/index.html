@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Track Your Hikes</h1>
+    </header>
+    <main>
+
+    <form>
+        <input 
+            type='text'
+            id="title"
+            placeholder="Name Of Hike"/>
+        <input 
+            type='text'
+            id="img"
+            placeholder='Paste An Image URL'/>
+        <input 
+            type='text'
+            id="miles"
+            placeholder='Number Of Miles'/>
+        <section id="ratings-container">
+            <p>Rate The Hike:</p>
+            <div id="radio-container">
+                <label for="one">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="1"
+                        id="one"/>
+                    1
+                </label>
+                <label for="two">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="2"
+                        id="two"/>
+                    2
+                </label>
+                <label for="three">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="3"
+                        id="three"/>
+                    3
+                </label>
+                <label for="four">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="4"
+                        id="four"/>
+                    4
+                </label>
+                <label for="five">
+                    <input
+                        type="radio"
+                        name="ratings"
+                        value="5"
+                        id="five"/>
+                    5
+                </label>
+            </div>
+        </section>
+        <button id="addHike">Add Hike</button>
+    </form>
+
+    <section id="movies-container"></section>
+
+<div id="mktwo">
+<button id="getRandomHikeButton">Get Random Hike</button>
+</div>
+
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #53917E;
+}
+
+header {
+    height: 80px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: blanchedalmond;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 350px;
+    height: 350px;
+    background-color: #B1B695;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 30px;
+}
+
+button {
+    background-color: white;
+    width: 75px;
+    height: 25px;
+    color: black;
+    border: none;
+    margin: 5px;
+}
+
+input[type='text'] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #232323;
+    color: #232323;
+    background-color: #B1B695;
+}
+
+#ratings-container {
+    width: 85%;
+}
+
+#radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hike-cover {
+    width: 200px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.hike-card {
+    background-color: #B1B695;
+    width: 200px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.hike-title {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.hike-rating {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.btns-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.btns-container > button {
+    width: 25px;
+}
+
+#mktwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+#getRandomHikeButton {
+    background-color: black;
+    color: white; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
