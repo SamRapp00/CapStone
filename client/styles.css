@@ -118,8 +118,10 @@ input[type='text'] {
 #getRandomHikeButton {
     background-color: black;
     color: white; 
-    padding: 5px 10px; 
+    padding: 7px 20px; 
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
+    width: auto; 
+    text-align: center; 
 }

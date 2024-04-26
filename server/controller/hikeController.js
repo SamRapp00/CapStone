@@ -2,22 +2,34 @@ let id = 11;
 
 const sentHikes = new Set();
 
+const linkOne = "";
+const linkTwo = "";
+const linkThree = "";
+
+
 
 const hikes = [
     {
         id: 1,
         name: "Stewart Falls",
-        imageURL: "TEST",
+        imageURL: "linkOne",
         miles: 5,
         rating: 3,
     },
     {
         id: 2,
         name: "BattleCreek Falls",
-        imageURL: "Test",
+        imageURL: "linkTwo",
         miles: 2,
         rating: 3,
-    }
+    },
+    {
+        id: 3,
+        name: "Timp Falls",
+        imageURL: "linkThree",
+        miles: 4,
+        rating: 1,
+    },
 ];
 
 
@@ -43,7 +55,6 @@ const getRandomHike = (req, res) => {
 
 const createHike = (req, res) => {
     const { rating } = req.body;
-    console.log(req.body)
     const newHike = { ...req.body, id, rating: +rating };
     hikes.push(newHike);
     id += 1;
@@ -62,16 +73,16 @@ const deleteHike = (req, res) => {
 };
 
 const editHike = (req, res) => {
-    const { identification } = req.params;
+    const { id } = req.params;
     const { type } = req.body;
-    const hike = hikes.find(hike => hike.id === +identification);
+    const hike = hikes.find(hike => hike.id === +id);
     if (hike) {
         if (type === "plus" && hike.rating < 5) {
             hike.rating++;
-            res.status(200).json(hikes);
+            res.status(200).json(hike);
         } else if (type === "minus" && hike.rating > 1) {
             hike.rating--;
-            res.status(200).json(hikes);
+            res.status(200).json(hike);
         } else {
             res.status(400).json({ message: 'Invalid type provided' });
         }
