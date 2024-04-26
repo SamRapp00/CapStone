@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #53917E;
+    background-color: #39393A;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     display: flex; 
     justify-content: center; 
     align-items: center;
-    color: blanchedalmond;
+    color: #FFE66D;
 }
 
 main {
@@ -23,7 +23,7 @@ main {
 form {
     width: 350px;
     height: 350px;
-    background-color: #B1B695;
+    background-color: #9B9B93;
     position: relative;
     display: flex; 
     flex-direction: column;
@@ -33,7 +33,7 @@ form {
 }
 
 button {
-    background-color: white;
+    background-color: #78FFD6;
     width: 75px;
     height: 25px;
     color: black;
@@ -47,7 +47,7 @@ input[type='text'] {
     border: none;
     border-bottom: 2px solid #232323;
     color: #232323;
-    background-color: #B1B695;
+    background-color: #9B9B93;
 }
 
 #ratings-container {
@@ -76,7 +76,7 @@ input[type='text'] {
 }
 
 .hike-card {
-    background-color: #B1B695;
+    background-color: #9B9B93;
     width: 200px;
     margin: 20px; 
     display: flex;
@@ -106,6 +106,7 @@ input[type='text'] {
 
 .btns-container > button {
     width: 25px;
+    background-color: #78FFD6;
 }
 
 #mktwo {
